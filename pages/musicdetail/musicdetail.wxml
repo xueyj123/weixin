@@ -1,0 +1,218 @@
+<view class='musicdetail'>
+
+    <!-- 信息 -->
+    <view class='music-info'>
+        <view class='comm-info'>
+            <view class='comm-box'>
+                <view class='comm-info-name'>
+                    相关信息
+                </view>
+            </view>
+
+            <view class='player'>
+
+                <view class='poster' style='background:url("{{myhost}}{{datas.coverurl}}") no-repeat;background-size: 100% 100%;'>
+                    <image src='../../static/icon/play_btn.png' bindtap='play' wx:if='{{!isplay}}' />
+                    <image src='../../static/icon/pause_btn.png' bindtap='pause' wx:else/>
+                </view>
+
+                <view class='music-box'>
+                    <text class='music-name'>{{datas.musicname}}</text>
+                    <text class='music-singer'>{{datas.singer}}</text>
+                    <text class='music-time'>{{dt}}</text>
+                </view>
+
+            </view>
+            <view class='author commonstyle'>歌手：{{datas.singer}}
+            </view>
+            <view class='author commonstyle'>作曲：{{datas.composer}}
+            </view>
+            <view class='author commonstyle'>填词：{{datas.writer}}
+            </view>
+            <view class='class commonstyle'>类型：音乐 > {{datas.cname}}</view>
+
+        </view>
+    </view>
+
+    <!-- 价格 -->
+    <view class='price'>
+        <view class='comm-box hidden'>
+            <view class='comm-info-name fl line-blue'>
+                单片会员价
+            </view>
+            <view class='price fl'>
+                ￥
+                <text>{{datas.price_int}}</text>.{{datas.price_dec}}
+            </view>
+        </view>
+        <view class='comm-btn flex'>
+            <view class='film' bindtap='play'>播放</view>
+            <view class='download' bindtap='pause'>暂停</view>
+            <view class='download' bindtap='stop'>停止</view>
+            <view class='download'>收藏</view>
+
+        </view>
+    </view>
+    <!-- 歌词 -->
+    <view class='view'>
+        <view class='comm-box'>
+            <view class='view-title'>
+                <view class='title-name'>
+                    歌词
+                </view>
+            </view>
+            <view class='view-body'>
+
+                <rich-text nodes='{{datas.words}}'></rich-text>
+
+            </view>
+        </view>
+    </view>
+    <!-- 评论 -->
+    <view class='comm-comment'>
+        <view class='comm-box'>
+            <view class='comm-info-name yellow-line'>
+                商品评论
+            </view>
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+
+
+    </view>
+
+
+
+    <!-- 垫高底部 -->
+    <view style='height:100rpx'></view>
+    <view class='footer flex'>
+
+        <view class='hsc flex align-center'>
+
+            <view class='hsc-home flex  flow-column flex-1 content-center align-center' bindtap='gohome'>
+                <image src='../../static/icon/tabbar_home_gray.png'></image>
+
+                <view class='hsc-home-text'>首页</view>
+            </view>
+            <view class='hsc-share flex-1 '>
+                <button class='hsc-share-img flex flow-column  content-center align-center button' open-type='share'>
+                    <image src='../../static/icon/share.png'></image>
+                    <view class='hsc-share-text'>分享</view>
+                </button>
+            </view>
+            <view class='hsc-cart flex flow-column flex-1 align-center' bindtap='goshopcar'>
+                <image src='../../static/icon/tabbar_cart_gray.png'></image>
+                <view class='hsc-cart-text '>购物车</view>
+                <view class='count' wx:if='{{setcount}}'>{{setcount}}</view>
+            </view>
+
+        </view>
+        <view class='buynow flex content-center'>
+            立即购买
+        </view>
+        <view class='addtocart flex content-center' bindtap='shopcaradd'>加入购物车</view>
+
+    </view>
+</view>

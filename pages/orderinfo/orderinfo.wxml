@@ -1,0 +1,80 @@
+<view class='orderinfo'>
+    <view wx:if="{{!list}}">没有数据</view>
+    <block wx:for="{{list}}" wx:key="{{index}}">
+        <view class='item'>
+            <view class='item-img'>
+                <image src='{{myhost}}{{item.coverurl}}'></image>
+            </view>
+            <view class='item-body'>
+                <view class='item-title'>{{item.pname}}</view>
+                <view class='item-box'>
+                    <view class='item-date'>下单日期：
+                        <text>{{item.dt}}</text>
+                    </view>
+                    <view class='item-price'>商品价格：￥
+                        <text>{{item.price}}</text>
+                    </view>
+                </view>
+                <view class='item-box flex-flow-column' wx:if='{{item.comment.notes}}'>
+                    <view class='item-comment '>
+                        <view class='item-star'>
+                                <star starnums='{{item.comment.stars}}'></star>
+                            
+                            <text>{{item.comment.stars}}</text>星评论
+                        </view>
+                        <view class='item-edit' bindtap='editcomment' data-classify='{{item.classify}}' data-pid='{{item.pid}}' data-num='{{item.comment.stars}}' data-notes='{{item.comment.notes}}'>编辑评论</view>
+                    </view>
+                    <view class='item-text'>
+                        {{item.comment.notes}}
+                    </view>
+                </view>
+                <view class='item-box' wx:else>
+                    <view class='add-comment' bindtap='createcomment'  data-classify='{{item.classify}}' data-pid='{{item.pid}}'>发表评论</view>
+                </view>
+            </view>
+        </view>
+    </block>
+
+
+    <view class='item'>
+
+        <view class='item-img'>
+            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+        </view>
+        <view class='item-body'>
+            <view class='item-title'>健康日历2019：丁香医生（团购电话：010-57993286</view>
+            <view class='item-box'>
+                <view class='item-date'>下单日期：
+                    <text>2018-09-20</text>
+                </view>
+                <view class='item-price'>商品价格：￥
+                    <text>26.34</text>
+                </view>
+            </view>
+            <view class='item-box flex-flow-column' wx:if='{{false}}'>
+                <view class='item-comment '>
+                    <view class='item-star'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star-gray.png'></image>
+                        <text>4</text>星评论
+                    </view>
+                    <view class='item-edit'>编辑评论</view>
+                </view>
+                <view class='item-text'>
+                    {{item_text}}
+                </view>
+            </view>
+            <view class='item-box' wx:else>
+                <view class='add-comment'>发表评论</view>
+            </view>
+        </view>
+
+    </view>
+
+
+
+
+</view>

@@ -1,0 +1,26 @@
+<view class='comment'>
+
+    <view class='item'>
+        <view class='item-box'>
+            <view class='product-name'>
+                {{pname.pname}}
+            </view>
+            <form bindsubmit="formSubmit" bindreset="formReset">
+                <view class='stars'>
+                    <block wx:for='{{stars}}' wx:key='{{index}}'>
+                        <image src='{{item.starurl}}' bindtap='selectStar' id='{{item.id}}'></image>
+                    </block>
+                </view>
+                <view class='edit'>
+                    <textarea value='{{content}}' name='content'></textarea>
+                </view>
+                <view class='btn-sure'>
+                    <button form-type='submit'>确认</button>
+                </view>
+            </form>
+
+        </view>
+    </view>
+
+
+</view>

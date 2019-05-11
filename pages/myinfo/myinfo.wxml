@@ -1,0 +1,39 @@
+<view class='myinfo'>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='myinfo-body bgcolor-white'>
+    <view class='myinfo-box'>
+      <view class='myinfo-item'>
+        <text>您的姓名：</text>
+        <input class='common-input' name='uname' value='{{uname}}' />
+      </view>
+      <view class='myinfo-item'>
+        <text>手机号码：</text>
+        <input class='common-input' name='tel' value='{{tel}}' />
+      </view>
+      <view class='myinfo-item  width-400 address'>
+        <text>收货地址：</text>
+        <input class='common-input' name='address' value='{{address}}' />
+        <button class='location'  bindtap='chooselocation'>地图定位</button>
+      </view>
+      <view class='myinfo-item'>
+        <text>邮政编码：</text>
+        <input class='common-input' name='post' value='{{post}}' />
+      </view>
+      <view class='myinfo-item noline'>
+        <text> 上传头像</text>
+        <button class='upload' bindtap='getphoto'>点击选择图片或拍照</button>
+        <image src='{{myheader}}' wx:if='{{myheader.length}}' class='myheader fr'></image>
+      </view>
+    </view>
+  </view>
+  <view class='myinfo-submit bgcolor-white'>
+    <view>
+      <button class='sure' form-type='submit'>确定</button>
+    </view>
+    <view>
+      <button class='reset' form-type="reset">重置</button>
+    </view>
+  </view>
+</form>
+</view>

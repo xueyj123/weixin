@@ -1,0 +1,165 @@
+<view class='bookdetail'>
+
+    <!-- 简介 -->
+
+    <view class='view'>
+        <view class='comm-box'>
+            <view class='view-title'>
+                <view class='title-name'>
+                    {{datas.moviename}}
+                </view>
+                <view class='add-favorite'>
+                    <image src='https://www.huachengzhubao.com/syweb10/static/ico/star-gray.png'></image>
+                    加入收藏
+                </view>
+
+            </view>
+            <view class='view-body'>
+                <rich-text nodes="{{datas.descript}}"></rich-text>
+            </view>
+        </view>
+
+        <!-- 花絮 -->
+        <view class='comm-box hidden'>
+            <view class='comm-info-name line-blue'>
+                花絮欣赏
+            </view>
+
+            <view class='view-body'>
+                <video class='video' src='{{datas.movieurl}}'></video>
+            </view>
+        </view>
+        <view class='comm-box hidden'>
+            <view class='comm-info-name fl .line-blue'>
+                单片会员价
+            </view>
+            <view class='price fl'>
+                ￥
+                <text>{{datas.price_int}}</text>.{{datas.price_dec}}
+            </view>
+        </view>
+        <view class='comm-btn flex'>
+            <view class='film'>观赏正片</view>
+            <view class='download'>下载影片</view>
+
+        </view>
+
+    </view>
+
+
+    <!-- 相关信息 -->
+    <view class='comm-info'>
+        <view class='comm-box'>
+            <view class='comm-info-name'>
+                相关信息
+            </view>
+        </view>
+        <view class='author commonstyle'>导演：{{datas.director}}
+            <text class='viewproduct'>查看作品</text>
+        </view>
+        <view class='publicer commonstyle'>主演：{{datas.roles}}
+        </view>
+        <view class='class commonstyle'>类型：{{datas.class_style}}</view>
+        <view class='country commonstyle'>国家：{{datas.class_country}}
+            <text class='viewproduct'>查看作品</text>
+        </view>
+        <view class='length commonstyle'>片长：{{datas.longs}}分钟</view>
+
+    </view>
+
+
+
+    <!-- 评论 -->
+    <view class='comm-comment'>
+        <view class='comm-box'>
+            <view class='comm-info-name yellow-line'>
+                商品评论
+            </view>
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+        <view class='comment-item'>
+            <view class='comment-author'>
+                <view class='author-header'>
+
+                    <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+
+                </view>
+                <view class='author-stars'>
+                    <view class='author-name'>张*</view>
+                    <view class='stars'>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+                    </view>
+
+                </view>
+
+            </view>
+            <view class='comment-conent'>
+                译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。
+            </view>
+
+
+        </view>
+
+
+    </view>
+    <!-- 垫高底部 -->
+    <view style='height:100rpx'></view>
+    <view class='footer flex'>
+
+        <view class='hsc flex align-center'>
+
+            <view class='hsc-home flex  flow-column flex-1 content-center align-center' bindtap='gohome'>
+                <image src='../../static/icon/tabbar_home_gray.png'></image>
+
+                <view class='hsc-home-text'>首页</view>
+            </view>
+            <view class='hsc-share flex-1 '>
+                <button class='hsc-share-img flex flow-column  content-center align-center button' open-type='share'>
+                    <image src='../../static/icon/share.png'></image>
+                    <view class='hsc-share-text'>分享</view>
+                </button>
+            </view>
+            <view class='hsc-cart flex flow-column flex-1 align-center' bindtap='goshopcar'>
+                <image src='../../static/icon/tabbar_cart_gray.png'></image>
+                <view class='hsc-cart-text '>购物车</view>
+                 <view class='count' wx:if='{{setcount}}'>{{setcount}}</view>
+            </view>
+
+        </view>
+        <view class='buynow flex content-center'>
+            立即购买
+        </view>
+        <view class='addtocart flex content-center' bindtap='shopcaradd'>加入购物车</view>
+
+    </view>
+
+</view>

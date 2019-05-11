@@ -1,0 +1,181 @@
+
+
+.poster {
+    width: 130rpx;
+    height: 130rpx;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.view {
+    background-color: #fff;
+}
+
+.comm-box {
+    padding: 0 35rpx;
+}
+
+.title-name {
+    font-size: 28rpx;
+    color: #333;
+    font-weight: bold;
+    border-left: solid 7rpx red;
+    padding-left: 10rpx;
+}
+
+
+
+.view-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.view-body {
+    font-size: 20rpx;
+    color: #808080;
+    padding-left: 18rpx;
+    margin-top: 20rpx;
+}
+
+.price {
+    background-color: #fff;
+    font-size: 26rpx;
+    color: red;
+    padding: 0 0 30rpx 0rpx;
+}
+
+.price text {
+    font-size: 30rpx;
+}
+
+.comm-info {
+    background-color: #fff;
+}
+
+.comm-info-name {
+    font-size: 33rpx;
+    color: #333;
+    border-left: solid 7rpx #96c;
+    padding-left: 10rpx;
+}
+
+.commonstyle {
+    font-size: 20rpx;
+    color: #333;
+    border-bottom: 1rpx solid #eaeaea;
+    line-height: 60rpx;
+    padding-left: 50rpx;
+}
+
+
+
+.comm-comment {
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding-top: 15rpx;
+}
+
+.yellow-line {
+    border-left: 7rpx solid #fc0;
+}
+
+.comment-item {
+    padding: 40rpx;
+    border-bottom: 1rpx solid #eaeaea;
+}
+
+.comment-author {
+    display: flex;
+}
+
+.author-header image {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.author-name {
+    font-size: 20rpx;
+    color: #333;
+    padding-left: 5rpx;
+}
+
+.author-stars {
+    margin-left: 10rpx;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars image {
+    width: 21rpx;
+    height: 21rpx;
+}
+
+.comment-conent {
+    font-size: 20rpx;
+    color: #939393;
+}
+
+.player {
+    width: 680rpx;
+    height: 130rpx;
+    margin: 13rpx auto 0;
+    border: 1rpx solid #e1e1e1;
+    background: #fcfcfc;
+    overflow: hidden;
+    position: relative;
+}
+
+.music-box text {
+    position: absolute;
+}
+
+.music-name {
+    left: 160rpx;
+    top: 32rpx;
+    font-size: 26rpx;
+    color: #333;
+}
+
+.music-singer {
+    font-size: 22rpx;
+    color: #9d9d9d;
+    left: 160rpx;
+    top: 76rpx;
+}
+
+.music-time {
+    color: #9d9d9d;
+    font-size: 23rpx;
+    right: 21rpx;
+    top: 27rpx;
+}
+
+.hidden {
+    padding-top:16rpx; 
+    overflow: hidden;
+}
+
+.comm-btn {
+    display: flex;
+    padding-left: 46rpx;
+}
+
+.comm-btn view {
+    font-size: 20rpx;
+    color: #000;
+    border: #69c 1rpx solid;
+    border-radius: 26rpx;
+    margin-right: 30rpx;
+    padding: 10rpx 20rpx;
+}

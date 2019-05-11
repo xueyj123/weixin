@@ -1,0 +1,45 @@
+<view class='booklist'>
+    <view class='search search-bgcolor' bindtap='search'>
+
+        <search></search>
+    </view>
+
+    <!-- tabbar -->
+    <view class='class-book'>
+    <text class='{{active_class}}'data-id='all' bindtap='style'>全部图书</text>
+        <block wx:for='{{style}}' wx:key="{{index}}" >
+            <text class='{{item.cls}}' bindtap='style' data-id='{{item.id}}'>{{ item.cname }}</text>
+        </block>
+
+    </view>
+
+
+    <!-- list -->
+    <view class='list'>
+        <block wx:for='{{list}}' wx:key='{{item.id}}'>
+            <view class='item' id='{{item.id}}' bindtap='godetail'>
+
+                <view class='item-img'>
+                    <image src='{{myhost}}{{item.coverurl}}'></image>
+                </view>
+                <view class='item-body'>
+                    <view class='item-title '>{{item.bookname}}</view>
+                    <view class='item-author'>作者：{{item.author}}</view>
+                    <view class='item-publicer'>出版社：{{item.publicer}}</view>
+                    <view class='item-date'>出版时间：{{item.date}}</view>
+                    <view class='item-descript space'>{{item.descript}}...</view>
+                    <view class='item-price'>￥
+                        <text>{{item.price_int}}</text>.{{item.price_dec}}</view>
+                    <view class='item-star'>
+                        <star starnums='{{item.stars}}'></star>
+                        <text>{{item.comment_count}}条评论</text>
+                    </view>
+
+                </view>
+
+            </view>
+        </block>
+
+    </view>
+
+</view>

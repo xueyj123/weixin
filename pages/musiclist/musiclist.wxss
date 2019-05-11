@@ -1,0 +1,71 @@
+.search-bgcolor {
+    background-color: #def2fc;
+}
+
+.class-music {
+    display: flex;
+    flex-wrap: wrap;
+    color: #4f4f4f;
+    font-size: 28rpx;
+    padding: 0 6rpx 25rpx;
+    border-bottom: 1rpx solid #e4e4e4;
+}
+
+.class-music text {
+    text-align: center;
+    padding: 6rpx 10rpx;
+    border-radius: 30rpx;
+    border: #d7d7d7 1rpx solid;
+    margin: 25rpx 10rpx 0;
+}
+
+.class-music .active {
+    color: red;
+    border-radius: 30rpx;
+    border: red 1rpx solid;
+}
+
+.music-item {
+    box-sizing: border-box;
+    display: flex;
+    font-size: 23rpx;
+    color: #666;
+    padding: 35rpx 85rpx 35rpx 30rpx
+}
+
+.music-item:nth-child(2n) {
+    background-color: #eee;
+}
+
+.poster image {
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 35rpx;
+}
+
+.p-title {
+    font-size: 28rpx;
+    color: #000;
+    padding-bottom: 10rpx;
+}
+
+.p-pricer {
+    color: #e43728;
+    font-size: 24rpx;
+}
+
+.p-pricer text {
+    font-size: 30rpx;
+}
+
+.stars image {
+    width: 21rpx;
+    height: 21rpx;
+}
+
+.p-comment{
+display: flex;
+}
+.p-comment>text{
+    margin-left: 30rpx;
+}

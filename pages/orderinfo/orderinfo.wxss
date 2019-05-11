@@ -1,0 +1,91 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.item {
+  background-color: #fff;
+  padding: 40rpx 45rpx;
+  display: flex;
+  margin-bottom: 35rpx;
+}
+
+.item-img image {
+  width: 175rpx;
+  height: 225rpx;
+}
+
+.item-body {
+  margin-left: 20rpx;
+}
+
+.item-box {
+  padding: 16rpx 0;
+  border-top: 1rpx #999 dotted;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #5d5d5d;
+}
+
+.item-title {
+  overflow: hidden;
+  height: 85rpx;
+  font-size: 27rpx;
+}
+
+.item-price {
+  padding-right: 16rpx;
+}
+
+.item-star {
+  display: flex;
+}
+
+.item-star image {
+  width: 21rpx;
+  height: 21rpx;
+  margin-right: 5rpx;
+}
+
+.item-star text {
+  margin-left: 10rpx;
+}
+
+.item-edit {
+  width: 109rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  background-color: #8067ab;
+  border-radius: 32rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 21rpx;
+}
+
+.item-text {
+  overflow: hidden;
+  font-size: 22rpx;
+  color: #5d5d5d;
+}
+
+.item-comment {
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 0;
+}
+
+.flex-flow-column {
+  flex-flow: column;
+  padding: 0;
+}
+
+.add-comment {
+  width: 109rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  border-radius: 32rpx;
+  background-color: #f00;
+  color: #fff;
+  font-size: 22rpx;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+
+
+.search_box {
+    height: 57rpx;
+    display: flex;
+    align-items: center;
+}
+
+.search_box .icon image {
+    width: 27rpx;
+    height: 27rpx;
+    margin-left: 20rpx;
+}
+
+.search_box .search_text {
+    font-size: 25rpx;
+    color: #b2b1b1;
+    margin-left: 15rpx;
+}

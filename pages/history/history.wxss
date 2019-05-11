@@ -1,0 +1,21 @@
+page {
+  background-color: #fff;
+}
+
+.history {
+  padding: 35rpx;
+}
+
+.item {
+  border-bottom: 1rpx dotted #999;
+}
+
+.item-data {
+  font-size: 18rpx;
+  color: #999;
+}
+
+.item-con {
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}

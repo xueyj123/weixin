@@ -1,0 +1,98 @@
+page {
+  background: #eaeaea;
+}
+
+.shopcar {
+  background: #fff;
+  margin-top: 16rpx;
+}
+
+.item {
+  padding: 46rpx 46rpx 36rpx;
+  border-bottom: 1rpx #eaeaea dotted;
+  display: flex;
+}
+
+.item-left {
+  width: 140rpx;
+  height: 160rpx;
+}
+
+.item-right {
+  margin-left: 50rpx;
+}
+
+.item-right .item-title {
+  font-size: 26rpx;
+  color: #000;
+  height: 70rpx;
+  overflow: hidden;
+}
+
+.item-right .item-price {
+  padding: 10rpx 0;
+  color: #ff5854;
+  font-size: 26rpx;
+}
+
+.item-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.opts {
+  width: 164rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border: 1rpx solid #a2a2a2;
+  border-radius: 6rpx;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.opts .opt-input {
+  width: 70rpx;
+  height: 40rpx;
+  border-left: 1rpx #a2a2a2 solid;
+  border-right: 1rpx #a2a2a2 solid;
+}
+.item-option .del image{
+    width: 40rpx;height: 40rpx
+}
+
+.item-option .item-del {
+  width: 35rpx;
+  height: 40rpx;
+}
+
+.cash{
+  padding-right: 46rpx;
+  display: flex;
+  height: 185rpx;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cash-title{
+  color: #999;
+  font-size:23rpx; 
+}
+
+
+.cash-total{
+  color: #FB4741;
+  font-size: 28rpx;
+  font-weight: bold;
+  
+}
+.cash-pay{
+  width: 230rpx;
+  height: 72rpx;
+  background-color:#FB4741 ;
+  color: #fff;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 28rpx;
+  margin-left: 32rpx;
+}

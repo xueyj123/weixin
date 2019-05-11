@@ -1,0 +1,36 @@
+page{
+  background:#7B537B url('https://www.huachengzhubao.com/syweb10/static/images/scanbg.jpg') no-repeat top center;
+  background-size: 100% 100%;
+}
+.myheader{
+  width: 109rpx;
+  height: 109rpx;
+  margin: auto
+}
+.myheader image{
+  border: #fff 5rpx solid;
+  border-radius: 50%;
+}
+.myinfo {
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+
+.myinfo view{
+  margin-bottom: 10rpx;
+}
+
+.scan-btn{
+  text-align: center;
+  padding-top: 300rpx;
+   width: 259rpx;
+  height: 259rpx;
+  margin: auto;
+}
+.scan-btn image{
+   border: #fff 10rpx solid;
+  border-radius: 50%;
+}
+

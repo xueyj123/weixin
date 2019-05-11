@@ -1,0 +1,15 @@
+<view class='scan'>
+
+    <view class='myheader'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/images/header.png'></image>
+    </view>
+
+    <view class='myinfo'>
+        <!-- <open-data type="userAvatarUrl"></open-data> 
+        <open-data type="userNickName" lang="zh_CN"></open-data>  -->
+
+    </view>
+    <view class='scan-btn'>
+        <image src='{{host}}/web10/static/images/scanbutton.png' bindtap='scan'></image>
+    </view>
+</view>

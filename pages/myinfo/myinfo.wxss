@@ -1,0 +1,96 @@
+page {
+  background: #f1f1f1;
+}
+
+.myinfo-body, .myinfo-submit {
+  margin: 40rpx 20rpx;
+  border-radius: 10rpx;
+}
+
+.myinfo-box {
+  padding: 18rpx;
+}
+
+.myinfo-item {
+  height: 65rpx;
+  line-height: 65rpx;
+  margin-bottom: 34rpx;
+  border-bottom: #d8d8d8 1px solid;
+  font-size: 26rpx;
+  color: #666;
+  padding-left: 12rpx;
+}
+
+.myinfo-item text {
+  float: left;
+}
+
+.myinfo-item .common-input {
+  float: left;
+  height: 65rpx;
+  line-height: 65rpx;
+}
+
+.width-400 {
+  width: 494rpx;
+}
+
+.address {
+  position: relative;
+}
+.location {
+  position: absolute;
+  right: -160rpx;
+width: 143rpx;
+height: 50rpx;
+line-height: 50rpx;
+font-size: 20rpx;
+background-color: #9999ff;
+color: #fff;
+}
+
+.noline{
+  border: none;
+  position: relative
+}
+.upload{
+  width: 250rpx;
+  height: 50rpx;
+  background-color: #99cc00;
+  font-size: 20rpx;
+  color: #fff;
+  line-height: 50rpx;
+  position: absolute;
+  left: 180rpx;
+}
+
+
+.myinfo-submit{
+  height: 92rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.myinfo-submit button{
+  width: 147rpx;
+  height: 46rpx;
+  font-size: 26rpx;
+  color: #fff;
+  line-height: 46rpx;
+  border-radius: 50rpx;
+}
+.sure{
+  background-color: #ff0000;
+}
+.reset{
+  background-color: #999;
+  margin-left: 20rpx;
+}
+
+.myheader{
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 80rpx;
+    margin-top: -20rpx;
+    border-radius: 50%;
+}

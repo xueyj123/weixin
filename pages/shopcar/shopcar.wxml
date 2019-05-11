@@ -1,0 +1,76 @@
+<view class='shopcar'>
+    <block wx:if='{{result}}'>
+        <view>{{result}}</view>
+    </block>
+    <block wx:else>
+    <!-- 图书 -->
+        <view class='item' wx:for='{{bookDatas}}' wx:key='{{index}}'>
+            <view class='item-left '>
+                <image src='{{myhost}}{{item.pdatas.cover[0].coverurl}}'></image>
+            </view>
+            <view class='item-right flex-1'>
+                <view class='item-title'>{{item.pdatas.bookname}}</view>
+                <view class='item-price'>￥{{item.pdatas.price}}</view>
+                <view class='item-option'>
+                    <view class='opts'>
+                        <view class='opt-sub flex-1' data-name='book' data-id='{{item.pid}}' bindtap='sub'>-</view>
+                        <view class='opt-input '>{{item.count}}</view>
+                        <view class='opt-add flex-1' data-name='book' data-id='{{item.pid}}' bindtap='add'>+</view>
+                    </view>
+                    <view class='del' data-name='book' data-id='{{item.pid}}' bindtap='del'>
+                        <image src='../../static/icon/rubish.png'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- 音乐 -->
+       <view class='item' wx:for='{{musicDatas}}' wx:key='{{index}}'>
+            <view class='item-left '>
+                <image src='{{myhost}}{{item.pdatas.coverurl}}'></image>
+            </view>
+            <view class='item-right flex-1'>
+                <view class='item-title'>{{item.pdatas.musicname}}</view>
+                <view class='item-price'>￥{{item.pdatas.price}}</view>
+                <view class='item-option'>
+                    <view class='opts'>
+                        <view class='opt-sub flex-1' data-name='music' data-id='{{item.pid}}' bindtap='sub'>-</view>
+                        <view class='opt-input '>{{item.count}}</view>
+                        <view class='opt-add flex-1' data-name='music' data-id='{{item.pid}}' bindtap='add'>+</view>
+                    </view>
+                    <view class='del' data-name='music' data-id='{{item.pid}}' bindtap='del'>
+                        <image src='../../static/icon/rubish.png'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <!-- 电影 -->
+        <view class='item' wx:for='{{movieDatas}}' wx:key='{{index}}'>
+            <view class='item-left '>
+                <image src='{{myhost}}{{item.pdatas.coverurl}}'></image>
+            </view>
+            <view class='item-right flex-1'>
+                <view class='item-title'>{{item.pdatas.moviename}}</view>
+                <view class='item-price'>￥{{item.pdatas.price}}</view>
+                <view class='item-option'>
+                    <view class='opts'>
+                        <view class='opt-sub flex-1' data-name='movie' data-id='{{item.pid}}' bindtap='sub'>-</view>
+                        <view class='opt-input '>{{item.count}}</view>
+                        <view class='opt-add flex-1' data-name='movie' data-id='{{item.pid}}' bindtap='add'>+</view>
+                    </view>
+                    <view class='del' data-name='movie' data-id='{{item.pid}}' bindtap='del'>
+                        <image src='../../static/icon/rubish.png'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class='cash'>
+            <text class='cash-title'>店铺合计：</text>
+            <text class='cash-total'>￥{{totalprice}}</text>
+            <text class='cash-pay' bindtap='gopay'>去结算</text>
+        </view>
+    </block>
+
+</view>

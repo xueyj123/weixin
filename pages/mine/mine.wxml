@@ -1,0 +1,163 @@
+<view class='mine'>
+    <view class='header'>
+        <image src='{{host}}{{header}}'></image>
+    </view>
+
+    <view class='hello'>{{userinfo}}</view>
+
+    <view class='items'>
+        <view class='item' bindtap='myinfo'>
+            <view class='item-img'>
+                <image src='{{host}}/static/ico/my_ico1.png'></image>
+            </view>
+            <view class='item-text'>完善资料</view>
+        </view>
+        <view class='item' bindtap='myorder'>
+            <view class='item-img'>
+                <image src='{{host}}/static/ico/my_ico2.png'></image>
+            </view>
+            <view class='item-text'>订单信息</view>
+        </view>
+        <view class='item'>
+            <view class='item-img' bindtap='mycomment'>
+                <image src='{{host}}/static/ico/my_ico3.png'></image>
+            </view>
+            <view class='item-text'>我的评论</view>
+        </view>
+        <view class='item'>
+            <view class='item-img'>
+                <image src='{{host}}/static/ico/my_ico4.png'></image>
+            </view>
+            <view class='item-text'>浏览历史</view>
+        </view>
+        <view class='item'>
+            <view class='item-img'>
+                <image src='{{host}}/static/ico/my_ico5.png'></image>
+            </view>
+            <view class='item-text'>我的收藏</view>
+        </view>
+
+    </view>
+
+    <view class='tools'>
+        <button open-type="contact" class='tools-item button flex-1'>
+            <!-- <button open-type="contact" class='button flex'> -->
+            <view class='tools-img'>
+                <image src='{{host}}/static/ico/my_ico11.png'></image>
+            </view>
+            <view class='tools-text'>
+                客服电话
+            </view>
+        </button>
+        <button  open-type="contact" class='tools-item button flex-1'>
+            <view class='tools-img'>
+                <image src='{{host}}/static/ico/my_ico12.png'></image>
+            </view>
+            <view class='tools-text'>
+                实用小工具
+            </view>
+        </button>
+        <button  open-type="contact" class='tools-item button flex-1'>
+            <view class='tools-img'>
+                <image src='{{host}}/static/ico/my_ico13.png'></image>
+            </view>
+            <view class='tools-text'>
+                电话咨询
+            </view>
+        </button>
+
+    </view>
+
+    <view class='recommend'>
+
+        <view class='recommend-title'>
+            <image src='{{host}}/static/ico/crown.png'></image>
+            <text>精品推荐</text>
+        </view>
+        <view class='recommend-body'>
+            <view class='recommend-box'>
+
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+                <view class='hotsale-item'>
+                    <view class='hotsale-item-box'>
+                        <view class='hotsale-item-img'>
+                            <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+                        </view>
+                        <view class='hotsale-item-title'>
+                            健康日历2019：丁香医生(团购...
+                        </view>
+                        <view class='hotsale-item-price'>￥
+                            <text>44</text>.56
+                        </view>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+
+    </view>
+</view>

@@ -1,0 +1,45 @@
+<view class='musiclist'>
+
+    <view class='search search-bgcolor' bindtap='search'>
+
+        <search></search>
+    </view>
+    <view class='class-music'>
+        <text class='{{activ}}'  bindtap='classitem'>全部</text>
+        <block wx:for='{{classify}}' wx:key='{{item.id}}'>
+            <text class='{{item.cls}}' bindtap='classitem' id='{{item.id}}'>{{item.cname}}</text>
+        </block>
+    </view>
+    <view wx:if='{{!list.length}}'>没有数据</view>
+    <view class='music-box'>
+
+
+        <block wx:for='{{list}}' wx:key="{{item.id}}">
+            <view class='music-item' id='{{item.id}}' bindtap='musicdetail'>
+
+                <view class='poster'>
+                    <image src='{{myhost}}{{item.coverurl}}'></image>
+                </view>
+
+
+                <view class='movie-info'>
+                    <view class='p-title'>{{item.musicname}}</view>
+                    <view class='p-dirctor'>原唱：{{item.singer}} / 作曲：{{composer}} / 填词：{{item.writer}}</view>
+                    <view class='p-pricer'>￥
+                        <text>{{item.price_int}}</text>.{{item.price_dec}}</view>
+                    <view class='p-comment'>
+                        <view class='stars'>
+                            <star starnums='{{item.stars}}'></star>
+                        </view>
+                        <text>{{item.comment_count}}条评论</text>
+
+                    </view>
+
+                </view>
+
+            </view>
+        </block>
+
+    </view>
+
+</view>

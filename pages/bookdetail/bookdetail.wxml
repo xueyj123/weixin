@@ -1,0 +1,137 @@
+<view class='bookdetail'>
+
+
+    <!-- 封面 -->
+    <view class='poster'>
+        <view class='swiper'>
+            <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular='ture'>
+                <block wx:for="{{imgUrls}}" wx:key='index'>
+                    <swiper-item>
+                        <image src='{{myhost}}{{item.coverurl}}' class="slide-image" mode='scaleToFill'></image>
+
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+
+    </view>
+
+
+    <!-- 简介 -->
+
+    <view class='view'>
+        <view class='comm-box'>
+            <view class='view-title'>
+                <view class='title-name'>
+                    {{datas.bookname}}
+                </view>
+                <view class='add-favorite'>
+                    <image src='https://www.huachengzhubao.com/syweb10/static/ico/star-gray.png'></image>
+                    加入收藏
+                </view>
+
+            </view>
+            <view class='view-body'>
+                <rich-text nodes="{{datas.descript}}..." bindtap="tap"></rich-text>
+            </view>
+        </view>
+    </view>
+    <!-- 价格 -->
+    <view class='price'>
+        ￥
+        <text>{{datas.price_int}}</text>.{{datas.price_dec}}
+    </view>
+
+    <!-- 相关信息 -->
+    <view class='comm-info'>
+        <view class='comm-box'>
+            <view class='comm-info-name'>
+                相关信息
+            </view>
+        </view>
+        <view class='author commonstyle'>作者：{{datas.author}}
+            <text class='viewproduct' id='{{datas.author}}' bindtap='viewworks'>查看作品></text>
+        </view>
+        <view class='publicer commonstyle'>出版：{{datas.publicer}}
+            <text class='viewproduct'>查看作品></text>
+        </view>
+        <view class='class commonstyle'>分类：图书 > {{datas.cname}}</view>
+
+    </view>
+
+
+
+    <!-- 评论 -->
+    <view class='comm-comment'>
+        <view class='comm-box'>
+            <view class='comm-info-name yellow-line'>
+                商品评论
+            </view>
+        </view>
+
+        <block wx:for='{{comments}}' wx:key='{{index}}'>
+            <view class='comment-item'>
+                <view class='comment-author'>
+                    <view class='author-header'>
+
+                        <image src='{{myhost}}{{item.header}}'></image>
+
+                    </view>
+                    <view class='author-stars'>
+                        <view class='author-name'>{{item.uname}}</view>
+                        <view class='stars'>
+                            <star starnums='{{item.stars}}'>
+                            </star>
+                        </view>
+
+                    </view>
+
+                </view>
+                <view class='comment-conent'>
+                    {{item.notes}}
+                </view>
+
+
+            </view>
+        </block>
+
+
+
+
+
+
+
+        <!-- 垫高底部 -->
+        <view style='height:100rpx'></view>
+        <view class='footer flex'>
+
+            <view class='hsc flex align-center'>
+
+                <view class='hsc-home flex  flow-column flex-1 content-center align-center' bindtap='gohome'>
+                    <image src='../../static/icon/tabbar_home_gray.png'></image>
+
+                    <view class='hsc-home-text'>首页</view>
+                </view>
+                <view class='hsc-share flex-1 '>
+                    <button class='hsc-share-img flex flow-column  content-center align-center button' open-type='share'>
+                        <image src='../../static/icon/share.png'></image>
+                        <view class='hsc-share-text'>分享</view>
+                    </button>
+                </view>
+                <view class='hsc-cart flex flow-column flex-1 align-center' bindtap='goshopcar'>
+                    <image src='../../static/icon/tabbar_cart_gray.png'></image>
+                    <view class='hsc-cart-text '>购物车</view>
+                    <view class='count' wx:if='{{setcount}}'>{{setcount}}</view>
+                </view>
+
+            </view>
+            <view class='buynow flex content-center' bindtap='gopay'>
+                立即购买
+            </view>
+            <view class='addtocart flex content-center' bindtap='shopcaradd'>加入购物车</view>
+
+        </view>
+
+    </view>
+
+</view>

@@ -1,0 +1,71 @@
+.search-bgcolor {
+    background-color: #d2ffff;
+}
+
+.class-book {
+    display: flex;
+    flex-wrap: wrap;
+    color: #4f4f4f;
+    font-size: 30rpx;
+}
+
+.class-book text {
+    width: 20%;
+    text-align: center;
+    border-bottom: #e4e4e4 1rpx solid;
+    padding: 32rpx 0 20rpx 0;
+}
+
+.class-book .active {
+    color: red;
+    border-bottom: red 1rpx solid;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 750rpx;
+    height: 360rpx;
+    background: #fff;
+    margin-bottom: 40rpx;
+    display: flex;
+    padding: 50rpx 30rpx;
+}
+
+.item-img image {
+    width: 194rpx;
+    height: 246rpx;
+}
+
+.item-body {
+    margin-left: 20rpx;
+}
+
+.item-title {
+    font-size: 28rpx;
+    margin-bottom: 4rpx;
+}
+
+.item-author, .item-publicer, .item-date, .item-descript, .item-star {
+    font-size: 23rpx;
+    color: #666;
+}
+
+.item-price {
+    color: #e43728;
+    font-size: 23rpx;
+    margin: 4rpx 0;
+}
+
+.space {
+    margin-top: 2rpx;
+}
+
+.item-price text {
+    font-size: 30rpx;
+}
+
+.item-star image {
+    width: 21rpx;
+    height: 21rpx;
+    margin-right: 4rpx;
+}

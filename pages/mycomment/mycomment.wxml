@@ -1,0 +1,50 @@
+<view class='comment'>
+
+  <view class='item'>
+    <view class='item-box'>
+      <view class='product-name'>
+        爱的故事的分公司的符合规范贾湖骨笛建行卡的分公司的发挥
+      </view>
+      <view class='stars'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+
+      </view>
+      <view class='edit'>
+        <textarea value='sdagadfgsdfgsdfhsdafg'></textarea>
+      </view>
+      <view class='btn-sure'>
+        <button form-type='submit'>确认</button>
+
+      </view>
+
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item-box'>
+      <view class='product-name'>
+        爱的故事的分公司的符合规范贾湖骨笛建行卡的分公司的发挥
+      </view>
+      <view class='stars'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+
+      </view>
+      <view class='edit'>
+        <textarea value='sdagadfgsdfgsdfhsdafg'></textarea>
+      </view>
+      <view class='btn-sure'>
+        <button form-type='submit'>确认</button>
+
+      </view>
+
+    </view>
+  </view>
+
+</view>

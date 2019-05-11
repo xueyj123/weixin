@@ -1,0 +1,4 @@
+<block wx:for='{{list}}' wx:key='{{index}}'>
+    <image src='{{item}}'></image>
+
+</block>

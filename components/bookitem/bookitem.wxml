@@ -1,0 +1,24 @@
+<view class='item'>
+
+    <view class='item-img'>
+      <image src='https://www.huachengzhubao.com/syweb10/static/images/hotsale_194x194.jpg'></image>
+    </view>
+    <view class='item-body'>
+      <view class='item-title '>健康日历2019：丁香医生(团购电话...</view>
+      <view class='item-author'>作者：丁香医生</view>
+      <view class='item-publicer'>出版社：思创科技出版社</view>
+      <view class='item-date'>出版时间：2018-10-20</view>
+      <view class='item-descript space'>此处用于描述本书的介绍，图书介绍，本书的基本概要和价值说明，以及其他内容...</view>
+      <view class='item-price'>￥<text>44</text>.00</view>
+      <view class='item-star'>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star.png'></image>
+        <image src='https://www.huachengzhubao.com/syweb10/static/ico/star-gray.png'></image>
+        <text>1498条评论</text>
+      </view>
+
+    </view>
+
+  </view>

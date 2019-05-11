@@ -1,0 +1,37 @@
+<view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+
+        <view class="section" class='input'>
+            <!-- <view class="section__title">请在下方输入搜索内容</view> -->
+            <input name="search" placeholder="请输入需要搜索的内容" id='search' />
+        </view>
+
+        <view class="btn-area" class='btn'>
+            <button form-type="submit" size='mini'>提交</button>
+            <button form-type="reset" size='mini'>重置</button>
+        </view>
+    </form>
+    <!-- list -->
+
+    <view class='list'>
+        <view wx:if='{{!list.length}}'>没有数据</view>
+        <block wx:for='{{list}}' wx:key='{{item.id}}'>
+            <view class='item' data-id='{{item.id}}' data-classify='{{item.classify}}' bindtap='godetail'>
+
+                <view class='item-img'>
+                    <image src='{{myhost}}{{item.coverurl}}'></image>
+                </view>
+                <view class='item-body'>
+                    <view class='item-title '>{{item.pname}}</view>
+                    <view class='item-price'>￥
+                        <text>{{item.price_int}}</text>.{{item.price_dec}}
+                    </view>
+
+                </view>
+
+            </view>
+        </block>
+
+    </view>
+
+</view>

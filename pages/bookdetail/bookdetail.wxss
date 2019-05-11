@@ -1,0 +1,150 @@
+page {
+    background-color: #eaeaea;
+}
+
+.poster {
+    height: 710rpx;
+    background-color: #fff;
+}
+
+.swiper swiper {
+    height: 710rpx;
+    text-align: center;
+}
+
+.swiper swiper image {
+    width: 470rpx;
+}
+
+.view {
+    background-color: #fff;
+}
+
+.comm-box {
+    padding: 0 35rpx;
+}
+
+.title-name {
+    font-size: 28rpx;
+    color: #333;
+    font-weight: bold;
+    border-left: solid 7rpx red;
+    padding-left: 10rpx;
+}
+
+.add-favorite image {
+    width: 22rpx;
+    height: 22rpx;
+}
+
+.view-title {
+    padding-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-favorite {
+    width: 130rpx;
+    font-size: 20rpx;
+    color: #999;
+    border: #ccc 1rpx solid;
+    border-radius: 50rpx;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-body {
+    font-size: 20rpx;
+    color: #808080;
+    padding-left: 18rpx;
+    margin-top: 20rpx;
+}
+
+.price {
+    background-color: #fff;
+    font-size: 26rpx;
+    color: red;
+    padding: 0 0 30rpx 46rpx;
+}
+
+.price text {
+    font-size: 30rpx;
+}
+
+.comm-info {
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding-top: 15rpx;
+}
+
+.comm-info-name {
+    font-size: 33rpx;
+    color: #333;
+    border-left: solid 7rpx #96c;
+    padding-left: 10rpx;
+}
+
+.commonstyle {
+    font-size: 20rpx;
+    color: #333;
+    border-bottom: 1rpx solid #eaeaea;
+    line-height: 60rpx;
+    padding-left: 50rpx;
+}
+
+.viewproduct {
+    float: right;
+    margin-right: 30rpx;
+    color: #999;
+}
+
+.comm-comment {
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding-top: 15rpx;
+}
+
+.yellow-line {
+    border-left: 7rpx solid #fc0;
+}
+
+.comment-item {
+    padding: 40rpx;
+    border-bottom: 1rpx solid #eaeaea;
+}
+
+.comment-author {
+    display: flex;
+}
+
+.author-header image {
+    border-radius: 50%;
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.author-name {
+    font-size: 20rpx;
+    color: #333;
+    padding-left: 5rpx;
+}
+
+.author-stars {
+    margin-left: 10rpx;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars image {
+    width: 21rpx;
+    height: 21rpx;
+}
+
+.comment-conent {
+    font-size: 20rpx;
+    color: #939393;
+}

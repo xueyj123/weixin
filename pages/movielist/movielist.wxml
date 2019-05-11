@@ -1,0 +1,71 @@
+<view class='movielist'>
+    <view class='search search-bgcolor' bindtap='search'>
+
+        <search></search>
+    </view>
+
+
+    <!-- 分类 -->
+
+    <view class='class-box'>
+        <view class='class-item'>
+            <view class='title'>全部分类</view>
+            <view class='list'>
+                <text class='{{current_styleclass}}' bindtap='getstyle' data-class_style='all_style'>全部</text>
+                <block wx:for="{{style}}" wx:key='{{item.id}}'>
+                    <text data-class_style='{{item.cname}}' bindtap='getstyle' class='{{item.cls}}'>{{item.cname}}</text>
+                </block>
+            </view>
+        </view>
+
+        <view class='class-item'>
+            <view class='title country'>全部地区</view>
+            <view class='list'>
+                <text class='{{current_countryclass}}' bindtap='getcountry' data-class_country='all_country'>全部</text>
+                <block wx:for="{{country}}" wx:key='{{item.id}}'>
+                    <text bindtap='getcountry' data-class_country='{{item.cname}}' class='{{item.cls}}'>{{item.cname}}</text>
+                </block>
+            </view>
+        </view>
+
+    </view>
+
+    <!-- list -->
+    <view wx:if='{{!list.length}}'>没有数据</view>
+    <block wx:for="{{list}}" wx:key="{{item.id}}">
+        <view class='movie-item' id='{{item.id}}' bindtap='gomoviedetail'>
+            <view class='poster'>
+                <image src='{{myhost}}{{item.coverurl}}'></image>
+            </view>
+            <view class='movie-info'>
+                <view class='p-title'>{{item.moviename}}</view>
+                <view class='p-dirctor'>导演：{{item.director}}</view>
+                <view class='p-writer'>编剧：{{item.writer}}</view>
+                <view class='p-role'>主演：{{item.roles}}</view>
+                <view class='p-class'>类型: {{item.class_style}}</view>
+                <view class='p-country'>制片国家/地区: {{item.class_country}}</view>
+                <view class='p-pricer'>￥
+                    <text>{{item.price_int}}</text>.{{item.price_dec}}</view>
+                <view class='p-comment'>
+                    <view class='stars'>
+                        <star starnums='{{item.stars}}'></star>
+                    </view>
+                    <text>{{item.comment_count}}条评论</text>
+
+                </view>
+
+            </view>
+
+        </view>
+    </block>
+
+
+
+
+
+
+
+
+
+
+</view>

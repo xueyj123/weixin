@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/musiclist/musiclist",
+    "pages/search/search",
+    "pages/payone/payone",
+    "pages/mine/mine",
+    "pages/mycc/mycc",
+    "pages/mycomment/mycomment",
+    "pages/movielist/movielist",
+    "pages/shopcar/shopcar",
+    "pages/pay/pay",
+    "pages/booklist/booklist",
+    "pages/musicdetail/musicdetail",
+    "pages/moviedetail/moviedetail",
+    "pages/bookdetail/bookdetail",
+    "pages/mycollect/mycollect",
+    "pages/orderinfo/orderinfo",
+    "pages/history/history",
+    "pages/myinfo/myinfo",
+    "pages/scan/scan",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "宇宙图书",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#ff4444",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/icon/tabbar_home_gray.png",
+        "selectedIconPath": "static/icon/tabbar_home.png"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫码",
+        "iconPath": "static/icon/tabbar_scan_gray.png",
+        "selectedIconPath": "static/icon/tabbar_scan.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "static/icon/tabbar_cart_gray.png",
+        "selectedIconPath": "static/icon/tabbar_cart.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/icon/tabbar_my_gray.png",
+        "selectedIconPath": "static/icon/tabbar_my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
